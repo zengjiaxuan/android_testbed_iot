@@ -7,12 +7,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
+
 
 public class MainActivity extends Activity {
     EditText input;
     TextView inputHint;
     Button btnCalc;
+    ImageView imgView;
+    Button btnNull;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,7 @@ public class MainActivity extends Activity {
                 String inputStatement = input.getText().toString();
                 //Todo: 这里执行计算功能
 
+                //btnNull.setText("Go");
                 double result = 20.0;
                 //结果在这里输出
                 inputHint.setText("= " + new Double(result).toString());
